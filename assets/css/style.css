@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+
+body {
+ 
+    font-family: 'Baloo 2', cursive;
+    overflow-x: hidden;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.img_container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+   
+    
+    
+}
+
+
+.big-text {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    line-height: 1.2em;
+   text-shadow: 2px 2px 4px rgb(105, 103, 221);
+
+
+}
+
+.small-text {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgb(105, 103, 221);
+
+}
+
+#frag_tv {
+    margin-top: 40px;
+}
+
+.number {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+       text-shadow: 2px 2px 4px rgb(76, 77, 179);
+
+}
+
+
+/*button*/
+
+
+.button1 {
+    /*background-color: #009100;*/
+    background-color: unset;
+    color: white;
+    /*border-radius: 10px;*/
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px 40px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    --webkit-transition: all 0.5s ease-in-out;
+}
+
+.button1:hover, .button1:active, .button1:focus, .button1:visited {
+    /*background-color: #00ba00;*/
+    text-decoration: none;
+    color: black;
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px black;
+    color: black;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.draw-border:hover {
+    color: rgb(0, 247, 255);
+}
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #00FFED;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+.responsive_number {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Open Sans', sans serif;
+    font-weight: 300;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.rotate {
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    margin-left: -200px;
+    margin-top: -25px;
+}
+
+.keypadwrapper {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.keypadwrapper .inputwrapper {
+    margin: 2em;
+    line-height: 0.61em;
+    vertical-align: middle;
+}
+
+.keypadwrapper .numberinput {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-size: 2em;
+}
+
+.keypadwrapper .keypad {
+    height: 350px;
+    margin-top: 50px;
+}
+.keypadwrapper .keypad .numberline {
+    width: 100%;
+}
+
+.keypadwrapper .keypad #linefour {
+    /*position: absolute;*/
+    bottom: 10%;
+}
+
+.keypadwrapper .keypad #linethree {
+    /*position: absolute;*/
+    bottom: 30%;
+}
+
+.keypadwrapper .keypad #linetwo {
+    /*position: absolute;*/
+    bottom: 50%;
+}
+
+.keypadwrapper .keypad #lineone {
+    /*position: absolute;*/
+    bottom: 70%;
+}
+
+.keypadwrapper .keypad .content {
+    display: inline-block;
+    margin: 0 8%;
+    height: 100px;
+
+}
+
+
+.keypadwrapper .keypad .content div {
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 70px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.keypadwrapper .keypad .content div span:nth-child(1) {
+    display: block;
+    font-size: 1.8em;
+    height: 1em;
+    margin-top: 0.2em;
+}
+
+.keypadwrapper .keypad .content div span:nth-child(2) {
+    font-size: 0.6em;
+}
+
+.keypadwrapper .keypad .content div:hover {
+    background-color: rgb(86, 198, 233);
+    color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nocircle {
+    width: auto !important;
+    border: none !important;
+    height: auto !important;
+}
+
+@media all and (max-width: 470px) {
+    .content {
+        margin: 0 5% !important;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .content {
+        margin: 0 2% !important;
+    }
+}
+
+@media all and (max-height: 470px) {
+    #linefour {
+        bottom: 2% !important;
+    }
+
+    #linethree {
+        bottom: 23% !important;
+    }
+
+    #linetwo {
+        bottom: 43% !important;
+    }
+
+    #lineone {
+        bottom: 63% !important;
+    }
+}
+
+
