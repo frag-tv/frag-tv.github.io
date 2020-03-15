@@ -35,7 +35,7 @@
                         <span class="numberinput"></span>
                         <span class="numberinput"></span>
                         <span class="numberinput"></span>
-                        <span class="numberinput"></span>
+                        <span class="numberinput" id="last"></span>
                     </div>
                     <div class="keypad">
                         <div id="lineone" class="numberline">
@@ -156,6 +156,7 @@
         $(".content").click(function () {
 
             var value = $(this).find(".number").text();
+            var last =$(this).find("#last").text();
 
             if (value !== "<") {
                 $(".numberinput").each(function () {
@@ -166,7 +167,7 @@
                         return false;
                     }
                 });
-            } else {
+            } else  {
                 $($(".numberinput").get().reverse()).each(function () {
                     var a = $(this).text();
                     if (a) {
@@ -176,8 +177,27 @@
                     }
                 });
             }
-        });
-    });
+            let numberinput_set = 0;
+            $('.numberinput').each(function () {
+                if ($(this).text() != '') {
+                    numberinput_set += 1;
+                }
+            });
+
+            if (numberinput_set == 4) {
+                let code = '';
+                $('.numberinput').each(function () {
+                    code += $(this).text();
+                });
+                
+                return window.location.href = "https://www.google.com/";
+
+            }
+      
+        }); 
+       
+    }); 
+  
     new WOW().init();
 </script>
 </body>
