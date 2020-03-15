@@ -135,7 +135,7 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 .responsive_number {
-    margin: 0;
+    margin: -30px;
     padding: 0;
     
     font-family: 'Open Sans', sans serif;
@@ -158,7 +158,7 @@ body {
 
 .keypadwrapper {
     text-align: center;
-    width: 110%;
+    width: 100%;
     color: #FFFFFF;
 }
 
